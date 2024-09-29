@@ -11,14 +11,14 @@ function App() {
   const queryParams = useQueryParams();
   const firstName = queryParams["user"];
 
-  const user = userPersonalJson.find(
+  let user = userPersonalJson.find(
     (u) => u.firstName.toLowerCase() === firstName?.toLowerCase()
   );
 
   console.log(user);
 
   if (!user) {
-    return <div>User not found!</div>;
+    user = userPersonalJson[0];
   }
   return (
     <main className="  relative flex justify-center h-screen w-screen items-center max-h-screen container mx-auto ">

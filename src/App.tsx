@@ -9,7 +9,7 @@ function App() {
   return (
     <main className="  relative flex justify-center h-screen w-screen items-center max-h-screen container mx-auto ">
       <div className="   flex  h-full w-[1000px]  flex-row items-start    max-md:flex-col max-md:items-center p-10 ">
-        <div className=" rounded-s-[20px] w-full h-full  max-w-[300px] bg-background-header   max-md:mr-0   lg:h-full   max-lg:justify-start   justify-center items-start flex p-10">
+        <div className=" rounded-s-[20px] w-full h-full  max-w-[280px] bg-background-header   max-md:mr-0   lg:h-full   max-lg:justify-start   justify-center items-start flex p-10">
           {/* <Header staticdata={staticdata} /> */}
           <div className=" flex flex-col gap-4 ">
             <div className="flex gap-2 items-center">
@@ -21,7 +21,7 @@ function App() {
         </div>
 
         <div className=" rounded-e-[20px]  flex flex-col justify-between w-full border h-full   text-left max-w-3xl   gap-4 max-h-full overflow-scroll ">
-          <div className=" px-10 py-10 flex flex-col gap-4 w-full h-full overflow-scroll ">
+          <div className=" px-10 py-10 flex flex-col gap-2 w-full h-full overflow-scroll ">
             <Avatar name="Tim" src="/images/profile.png" />
 
             <div className="flex flex-col gap-1">

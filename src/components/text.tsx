@@ -8,9 +8,9 @@ type TextProps = {
 function Text({ children, as = "p" }: TextProps) {
   const T = as ? as : "p";
   const styles = {
-    h1: "text-2xl ",
-    h3: "text-base font-bold",
-    p: "text-base ",
+    h1: "text-xl ",
+    h3: " text-sm font-bold",
+    p: "text-sm ",
   };
   return (
     <T

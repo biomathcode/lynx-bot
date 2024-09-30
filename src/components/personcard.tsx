@@ -8,8 +8,8 @@ function PersonCard({
   companyUrl = "/images/microsoft.png",
 }: PersonCard) {
   return (
-    <div className="  flex flex-col justify-center items-center gap-4 p-4 drop-shadow-brand-card w-full h-full bg-white rounded-sm">
-      <img src={imageUrl} className="  w-[240px] h-[240px] rounded-sm" />
+    <div className="  flex flex-col justify-center items-center gap-4 p-4 drop-shadow-brand-card w-full  bg-white rounded-sm">
+      <img src={imageUrl} className="  w-[240px] h-full rounded-sm" />
 
       <img src={companyUrl} className=" w-[112px] h-[24px] min-h-fit " />
     </div>

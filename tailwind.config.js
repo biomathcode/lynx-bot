@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        "background-header": "rgba(244, 246, 251, 1)",
+        "background-header": "rgba(239, 246, 255, 1)",
         "brand-header-border": "rgba(229, 229, 229, 1)",
         "brand-blue": "rgba(9, 9, 11, 1)",
         "brand-btn": "rgba(9, 9, 11, 1)",

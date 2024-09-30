@@ -11,7 +11,7 @@ function PersonCard({
     <div className="  flex flex-col justify-center items-center gap-6 px-4 pt-4 pb-6 drop-shadow-brand-card w-full  bg-white rounded-sm">
       <img src={imageUrl} className="  w-[240px] h-full rounded-sm" />
 
-      <img src={companyUrl} className=" w-[112px] h-[24px] min-h-fit " />
+      <img src={companyUrl} className=" w-[112px] h-[24px] " />
     </div>
   );
 }

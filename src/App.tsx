@@ -36,7 +36,7 @@ function App() {
           </div>
         </div>
 
-        <div className=" rounded-e-[20px] w-full  flex flex-col justify-between  border h-full   text-left max-w-3xl   gap-4 max-h-full overflow-scroll ">
+        <div className=" rounded-e-[20px] w-full  flex flex-col justify-between  border h-full   text-left max-w-3xl  max-h-full overflow-scroll ">
           <div className=" px-10 py-10 flex flex-col gap-2 w-full h-full overflow-scroll ">
             <Avatar name={user.firstName} src={user.imageUrl} />
 

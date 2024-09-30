@@ -2,7 +2,7 @@ import Button from "./button";
 
 function ChatBox() {
   return (
-    <div className=" sticky -bottom-8 py-2   flex flex-col gap-2 w-full items-start">
+    <div className=" sticky -bottom-8 py-1   flex flex-col gap-2 w-full items-start">
       {/* <BrandBox /> */}
 
       <form className=" w-full  bg-white flex flex-col  gap-4 ">

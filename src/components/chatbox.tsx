@@ -9,7 +9,7 @@ function ChatBox() {
         <textarea
           rows={2}
           placeholder="Type message here"
-          className=" p-4 h-[120px] line-clamp-4 border border-brand-border rounded-lg w-full "
+          className=" p-4 h-[120px] line-clamp-4 border border-brand-border rounded-xl w-full "
         />
         <div className="w-full">
           <Button type="secondary">Send</Button>

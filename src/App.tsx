@@ -37,10 +37,10 @@ function App() {
         </div>
 
         <div className=" rounded-e-[20px] w-full  flex flex-col justify-between  border h-full   text-left max-w-3xl  max-h-full overflow-scroll ">
-          <div className=" px-10 py-10 flex flex-col gap-2 w-full h-full overflow-scroll ">
+          <div className=" px-10 py-10 flex flex-col gap-4 w-full h-full overflow-scroll ">
             <Avatar name={user.firstName} src={user.imageUrl} />
 
-            <div className="flex flex-col gap-1">
+            <div className="flex flex-col gap-4">
               {user.salution.map((e) => (
                 <Text key={e} as="h3">
                   {e}

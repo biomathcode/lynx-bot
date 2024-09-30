@@ -7,13 +7,13 @@ type ButtonProps = {
 
 function Button({ children, type = "default" }: ButtonProps) {
   const buttonStyles = {
-    primary: "h-8 bg-brand-btn text-white",
-    secondary: "h-10 bg-brand-scd-btn text-white",
-    default: " h-8  bg-neutral-300",
+    primary: "h-8  bg-brand-btn text-white",
+    secondary: "h-10 bg-brand-scd-btn text-white w-full",
+    default: " h-8  bg-neutral-200",
   };
   return (
     <button
-      className={` text-sm rounded-lg px-2 w-[90px]      ${buttonStyles[type]}`}
+      className={` text-base rounded-xl px-6 py-4 flex justify-center items-center font-bold     ${buttonStyles[type]}`}
     >
       {children}
     </button>

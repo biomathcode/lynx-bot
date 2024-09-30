@@ -11,8 +11,8 @@ function ChatBox() {
           placeholder="Type message here"
           className=" p-4  line-clamp-4 border border-brand-border rounded-lg w-full "
         />
-        <div className=" self-end">
-          <Button type="secondary">Continue</Button>
+        <div className="w-full">
+          <Button type="secondary">Send</Button>
         </div>
       </form>
     </div>

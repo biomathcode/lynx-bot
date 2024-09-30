@@ -6,16 +6,18 @@ export default {
       colors: {
         "background-header": "rgba(244, 246, 251, 1)",
         "brand-header-border": "rgba(229, 229, 229, 1)",
-        "brand-blue": "rgba(29, 49, 88, 1)",
-        "brand-btn": "rgba(77, 128, 230, 1)",
-        "brand-scd-btn": "rgba(218, 110, 26, 1)",
+        "brand-blue": "rgba(9, 9, 11, 1)",
+        "brand-btn": "rgba(9, 9, 11, 1)",
+
+        "brand-scd-btn": "rgba(37, 99, 235, 1)",
         "brand-border": "rgba(229, 229, 229, 1)",
       },
       lineHeight: {
-        brand: "25.5px",
+        brand: "28px",
+        "brand-para": "24px",
       },
       letterSpacing: {
-        brand: "1%",
+        brand: "0px",
       },
       dropShadow: {
         "brand-card":

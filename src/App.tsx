@@ -22,8 +22,8 @@ function App() {
   }
   return (
     <main className="  relative flex justify-center h-screen w-screen items-center max-h-screen container mx-auto ">
-      <div className="   flex  h-full w-[1000px]  flex-row items-start    max-md:flex-col max-md:items-center p-10 ">
-        <div className=" rounded-s-[20px] w-full h-full  max-w-[280px] bg-background-header   max-md:mr-0   lg:h-full   max-lg:justify-start   justify-center items-start flex p-10">
+      <div className="   flex  h-full  flex-row items-center justify-center py-10 px-10 ">
+        <div className=" rounded-s-[20px] w-4/12 h-full   bg-background-header    lg:h-full   max-lg:justify-start   justify-center items-start flex p-10">
           <div className=" flex flex-col gap-4 ">
             <div className="flex gap-2 items-center">
               <Text as="h1">{user.firstName + " " + user.lastName}</Text>

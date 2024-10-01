@@ -2,7 +2,7 @@ import { useState } from "react";
 import Button from "./button";
 import { FileUpload } from "./icons";
 import { formStateType } from "../App";
-import Select from "./select";
+import SelectOptions from "./selectoption";
 
 function ChatBox({
   setFormState,
@@ -29,7 +29,7 @@ function ChatBox({
         >
           {chatLength > 0 && (
             <div className="absolute top-2 left-2 z-10 bg-white">
-              <Select />
+              <SelectOptions />
             </div>
           )}
 

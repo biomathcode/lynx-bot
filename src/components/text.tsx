@@ -16,11 +16,11 @@ function Text({ children, as = "p", color = "black" }: TextProps) {
     div: "text-base",
   };
 
-  const size = {
-    large: "",
-    medium: "",
-    small: "",
-  };
+  // const size = {
+  //   large: "",
+  //   medium: "",
+  //   small: "",
+  // };
 
   const colorType = {
     white: " text-white",

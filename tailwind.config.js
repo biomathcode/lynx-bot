@@ -11,6 +11,7 @@ export default {
         "bran-header-bg": "rgba(39, 39, 42, 1)",
 
         "brand-scd-btn": "rgba(37, 99, 235, 1)",
+
         "brand-border": "rgba(229, 229, 229, 1)",
       },
       lineHeight: {

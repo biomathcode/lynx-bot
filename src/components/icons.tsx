@@ -1,3 +1,67 @@
+function RightArrowIcon() {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      fill="none"
+      viewBox="0 0 24 24"
+    >
+      <path
+        stroke="#fff"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="1.5"
+        d="M20 12H4M15 17s5-3.682 5-5-5-5-5-5"
+      ></path>
+    </svg>
+  );
+}
+
+function GoogleIcon() {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="16"
+      fill="none"
+      viewBox="0 0 16 16"
+    >
+      <g fill="#fff" clipPath="url(#clip0_154_1093)">
+        <path d="M15.04 8.167c0-.52-.046-1.02-.133-1.5H8v2.84h3.947a3.381 3.381 0 01-1.473 2.207v1.846h2.38c1.386-1.28 2.186-3.16 2.186-5.393z"></path>
+        <path d="M8 15.334c1.98 0 3.64-.654 4.854-1.774l-2.38-1.846c-.654.44-1.487.706-2.474.706-1.906 0-3.526-1.286-4.106-3.02h-2.44v1.894A7.327 7.327 0 008 15.334z"></path>
+        <path d="M3.894 9.394A4.394 4.394 0 013.66 8c0-.486.087-.953.234-1.393V4.714h-2.44C.954 5.7.667 6.814.667 8c0 1.187.287 2.3.787 3.287l1.9-1.48.54-.413z"></path>
+        <path d="M8 3.587c1.08 0 2.04.373 2.807 1.093l2.1-2.1C11.634 1.394 9.98.667 8 .667a7.32 7.32 0 00-6.546 4.047l2.44 1.893c.58-1.733 2.2-3.02 4.106-3.02z"></path>
+      </g>
+      <defs>
+        <clipPath id="clip0_154_1093">
+          <path fill="#fff" d="M0 0H16V16H0z"></path>
+        </clipPath>
+      </defs>
+    </svg>
+  );
+}
+
+function EditIcon() {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      fill="none"
+      viewBox="0 0 24 24"
+    >
+      <path
+        stroke="#A1A1AA"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="1.5"
+        d="M16.425 4.605l.99-.99a2.1 2.1 0 012.97 2.97l-.99.99m-2.97-2.97l-6.66 6.66a3.96 3.96 0 00-1.041 1.84L8 16l2.896-.724a3.96 3.96 0 001.84-1.042l6.659-6.659m-2.97-2.97l2.97 2.97M19 13.5c0 3.288 0 4.931-.908 6.038a3.996 3.996 0 01-.554.554C16.43 21 14.788 21 11.5 21H11c-3.771 0-5.657 0-6.828-1.172C3 18.657 3 16.771 3 13v-.5c0-3.287 0-4.931.908-6.038.166-.202.352-.388.554-.554C5.57 5 7.212 5 10.5 5"
+      ></path>
+    </svg>
+  );
+}
+
 function MicrosoftLogo() {
   return (
     <svg
@@ -108,4 +172,12 @@ function CheckMarkIcon() {
   );
 }
 
-export { MicrosoftLogo, LynxIcon, CheckMarkIcon, FileUpload };
+export {
+  MicrosoftLogo,
+  LynxIcon,
+  CheckMarkIcon,
+  FileUpload,
+  EditIcon,
+  GoogleIcon,
+  RightArrowIcon,
+};

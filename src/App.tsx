@@ -1,16 +1,23 @@
+import { useState } from "react";
 import Avatar from "./components/avatar";
 import ChatBox from "./components/chatbox";
 
 import { CheckMarkIcon } from "./components/icons";
+import LoginBox from "./components/loginbox";
 import PersonCard from "./components/personcard";
 // import QuestionBox from "./components/questionbox";
 import Text from "./components/text";
 import userPersonalJson from "./data/userpersona";
 import useQueryParams from "./hooks/userQueryParams";
+import VerifyOTP from "./components/verifyotp";
+
+export type formStateType = "initial" | "register" | "verify";
 
 function App() {
   const queryParams = useQueryParams();
   const firstName = queryParams["user"];
+
+  const [formState, setFormState] = useState<formStateType>("initial");
 
   let user = userPersonalJson.find(
     (u) => u.firstName.toLowerCase() === firstName?.toLowerCase()
@@ -39,7 +46,7 @@ function App() {
           </div>
         </div>
 
-        <div className=" rounded-e-[20px] w-full   flex flex-col justify-between  border h-full   text-left max-w-3xl  max-h-full overflow-scroll ">
+        <div className=" rounded-e-[20px] w-full   flex flex-col justify-between  border h-full   text-left max-w-3xl   overflow-scroll ">
           <div className=" px-8 py-6 flex flex-col gap-4 w-full h-full overflow-scroll  ">
             <Avatar name={user.firstName} src={user.imageUrl} />
 
@@ -57,9 +64,13 @@ function App() {
 
             {/* <QuestionBox /> */}
           </div>
-          <div className="px-6 ">
-            <ChatBox />
-          </div>
+          {formState === "initial" && (
+            <div className="px-6 h-fit ">
+              <ChatBox setFormState={setFormState} />
+            </div>
+          )}
+          {formState === "register" && <LoginBox setFormState={setFormState} />}
+          {formState === "verify" && <VerifyOTP setFormState={setFormState} />}
         </div>
       </div>
     </main>

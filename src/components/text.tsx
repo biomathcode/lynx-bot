@@ -3,7 +3,7 @@ import { ReactNode } from "react";
 type TextProps = {
   children: ReactNode;
   as?: "p" | "h3" | "h1" | "div" | "h2";
-  color?: "white" | "black";
+  color?: "white" | "black" | "gray";
 };
 
 function Text({ children, as = "p", color = "black" }: TextProps) {
@@ -16,9 +16,16 @@ function Text({ children, as = "p", color = "black" }: TextProps) {
     div: "text-base",
   };
 
+  const size = {
+    large: "",
+    medium: "",
+    small: "",
+  };
+
   const colorType = {
     white: " text-white",
     black: " text-brand-blue",
+    gray: " text-neutral-400",
   };
   return (
     <T

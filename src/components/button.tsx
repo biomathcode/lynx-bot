@@ -3,9 +3,16 @@ import { ReactNode } from "react";
 type ButtonProps = {
   children: ReactNode;
   type: "primary" | "secondary" | "default" | "outline" | "small";
+  mode?: "button" | "submit" | "reset";
+  onClick?: () => void;
 };
 
-function Button({ children, type = "default" }: ButtonProps) {
+function Button({
+  children,
+  type = "default",
+  mode = "button",
+  onClick,
+}: ButtonProps) {
   const buttonStyles = {
     primary: " px-6 h-10 rounded-xl bg-brand-btn text-white",
     secondary: " px-6 h-8 rounded-md bg-brand-scd-btn text-white w-full",
@@ -15,7 +22,9 @@ function Button({ children, type = "default" }: ButtonProps) {
   };
   return (
     <button
-      className={` text-xs    flex-nowrap   brand-para flex justify-center items-center font-semibold     ${buttonStyles[type]}`}
+      type={mode}
+      onClick={onClick}
+      className={` text-xs gap-2  flex-nowrap   brand-para flex justify-center items-center font-semibold     ${buttonStyles[type]}`}
     >
       {children}
     </button>

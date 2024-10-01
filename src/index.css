@@ -89,8 +89,11 @@
     font-family: "TWKLausanne", system-ui, sans-serif;
   }
   
- 
-  
+}
+
+
+body {
+  background: linear-gradient(to bottom, #E5EEF5, #C9EDFD);
 }
 
 :root {

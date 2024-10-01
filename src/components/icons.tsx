@@ -68,12 +68,32 @@ function LynxIcon() {
   );
 }
 
+function FileUpload() {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      fill="none"
+      viewBox="0 0 24 24"
+    >
+      <path
+        stroke="#52525B"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="1.5"
+        d="M19.5 12v1.5a7.5 7.5 0 01-15 0V8a5 5 0 0110 0v5.5a2.5 2.5 0 01-5 0v-4"
+      ></path>
+    </svg>
+  );
+}
+
 function CheckMarkIcon() {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="28"
-      height="28"
+      width="20"
+      height="20"
       fill="none"
       viewBox="0 0 28 28"
     >
@@ -88,4 +108,4 @@ function CheckMarkIcon() {
   );
 }
 
-export { MicrosoftLogo, LynxIcon, CheckMarkIcon };
+export { MicrosoftLogo, LynxIcon, CheckMarkIcon, FileUpload };

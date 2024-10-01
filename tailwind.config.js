@@ -14,7 +14,7 @@ export default {
         "brand-border": "rgba(229, 229, 229, 1)",
       },
       lineHeight: {
-        brand: "28px",
+        brand: "20px",
         "brand-para": "24px",
       },
       letterSpacing: {

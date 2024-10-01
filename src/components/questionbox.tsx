@@ -6,7 +6,7 @@ function QuestionBox({
   children = "Are you open to paying for a guaranteed response from Faiz?",
 }: PropsWithChildren) {
   return (
-    <div className=" flex flex-col gap-4">
+    <div className=" flex flex-col gap-3">
       <Text as="p">{children}</Text>
       <div className="flex gap-4 ">
         <Button type="default">No</Button>
